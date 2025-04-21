@@ -1,0 +1,61 @@
+{
+    "app-id" : "org.arrl.trustedqsl",
+    "runtime" : "org.freedesktop.Platform",
+    "runtime-version" : "23.08",
+    "sdk" : "org.freedesktop.Sdk",
+    "command" : "tqsl",
+    "finish-args" : [
+	"--share=network",
+	"--socket=x11",
+	"--share=ipc",
+	"--filesystem=home"
+     ],
+    "modules" : [
+	{
+	    "name" : "wxWidgets",
+	    "buildsystem" : "cmake-ninja",
+    	    "config-opts" : [
+		    "-DwxUSE_OPENGL=No",
+		    "-DwxUSE_HTML=Yes",
+		    "-DwxUSE_STREAMS=Yes",
+		    "-DwxUSE_WXHTML_HELP=Yes",
+		    "-DCMAKE_BUILD_TYPE=Release",
+		    "-DwxUSE_UNICODE=Yes"
+	    ],
+	    "cleanup" : [
+			"/lib/wx",
+			"/bin/wx-config",
+			"/bin/wxrc",
+			"/bin/wxrc-3.2",
+			"/share/bakefile",
+			"/include",
+			"/lib/cmake"
+	    ],
+	    "sources" : [
+		{
+		    "type" : "archive",
+        	    "url" : "https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2",
+        	    "sha256" : "0640e1ab716db5af2ecb7389dbef6138d7679261fbff730d23845ba838ca133e"
+	  	}
+	    ]
+	},
+	{
+	    "name" : "tqsl",
+	    "buildsystem" : "cmake-ninja",
+    	    "config-opts" : [
+	        "-DTQSL_FLATPAK=Yes",
+		"-DCMAKE_BUILD_TYPE=Release"
+	    ],
+	    "cleanup" : [
+		"/include"
+	    ],
+	    "sources" : [
+		{
+		    "type" : "archive",
+        	    "url" : "https://www.rickmurphy.net/lotw/tqsl-2.7.5.tar.gz",
+        	    "sha256" : "09af4fb32b633efad4e2ef9bff1ea921b41cf020cd588ea134cea317ad0176cf"
+	  	}
+	    ]
+	}
+    ]
+}

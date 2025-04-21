@@ -1,4 +1,35 @@
 #!/usr/bin/make -f
 
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export DEB_BUILD_HARDENING=1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# Disable WXDEBUG assertions, which are on by default in wx3.0.
+export DEB_CXXFLAGS_MAINT_APPEND=-DNDEBUG
+
 %:
 	dh $@
+
+override_dh_install:
+	# Omit the 5 header files that the build installs to /usr/include
+	# (they would belong in a -dev package)
+	dh_install
+	rm -r debian/trustedqsl/usr/include
+	# symlink tqsl documentation into /usr/share/doc/trustedqsl
+	# see: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1020635
+	dh_link usr/share/TrustedQSL/help/tqslapp usr/share/doc/trustedqsl/help
+
+override_dh_installman:
+	# Duplicate the tqsl.5 man page for tqsl.1 but fix its section
+	# for dh_installman (see debian/trustedqsl.manpages).
+	mkdir -p debian/tmp
+	sed 's/^\.TH TQSL 5/.TH TQSL 1/' < apps/tqsl.5  \
+	    > debian/tmp/tqsl.1
+	dh_installman
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DTQSL_RPATH=TRUE \
+		-DCMAKE_INSTALL_LIBDIR=lib/trustedqsl \
+		-DCMAKE_INSTALL_MANDIR=/usr/share/man

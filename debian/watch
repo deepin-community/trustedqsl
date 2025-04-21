@@ -1,0 +1,14 @@
+version=4
+
+# older versions, e.g. TrustedQSL-1.13 ==> 1.13
+#http://sf.net/trustedqsl/TrustedQSL-([\d\.]+)\.tar\.gz
+
+# newer versions (since 1.14.2) should work with standard sourceforge scanner
+#http://sf.net/trustedqsl/tqsl-(.*)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+
+# versions since 2.3 are distributed from www.arrl.org
+# ARRL's website returns 200 OK even on non-existent files so don't scan for
+# PGP signature
+opts="pgpmode=none" \
+    https://www.arrl.org/tqsl-download \
+    .*/tqsl-(.*)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

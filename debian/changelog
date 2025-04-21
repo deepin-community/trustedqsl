@@ -1,5 +1,460 @@
-template-repository (1.0-1) unstable; urgency=medium
+trustedqsl (2.7.5-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 2.7.5 (Closes: #1088845)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- tony mancill <tmancill@debian.org>  Sun, 01 Dec 2024 14:34:18 -0800
+
+trustedqsl (2.7.4-1) unstable; urgency=medium
+
+  * New upstream version 2.7.4
+
+ -- tony mancill <tmancill@debian.org>  Sun, 03 Nov 2024 16:42:36 -0800
+
+trustedqsl (2.7.3-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove old, duplicated desktop files
+
+ -- Daniel Rusek <mail@asciiwolf.com>  Sat, 03 Aug 2024 12:04:26 +0200
+
+trustedqsl (2.7.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Loren M. Lang ]
+  * Fix watch file to ignore warning about possible PGP signature
+  * New upstream version 2.7.3
+  * Bump Standards-Version to 4.7.0
+  * Freshen years in debian/copyright
+
+ -- Loren M. Lang <lorenl@north-winds.org>  Sun, 21 Apr 2024 17:35:34 -0700
+
+trustedqsl (2.7.2-1) unstable; urgency=medium
+
+  * New upstream version 2.7.2
+
+ -- tony mancill <tmancill@debian.org>  Sat, 16 Dec 2023 17:45:00 -0800
+
+trustedqsl (2.7.1-1) unstable; urgency=medium
+
+  * New upstream version 2.7.1
+  * Replace build-dep on liblmdb-dev with libsqlite3-dev
+  * Freshen years in debian/copyright
+
+ -- tony mancill <tmancill@debian.org>  Tue, 07 Nov 2023 21:25:22 -0800
+
+trustedqsl (2.6.5-2) unstable; urgency=medium
+
+  * Symlink /usr/share/docs/trustedqsl/help to upstream docs
+    (Closes: #1020635)
+  * Bump Standards-Version to 4.6.2
+
+ -- tony mancill <tmancill@debian.org>  Sat, 14 Jan 2023 10:33:45 -0800
+
+trustedqsl (2.6.5-1) unstable; urgency=medium
+
+  * New upstream version 2.6.5
+  * Update build-dep for wxWidgets to 3.2 (Closes: #1019778)
+
+ -- tony mancill <tmancill@debian.org>  Wed, 14 Sep 2022 17:26:37 -0700
+
+trustedqsl (2.6.4-1) unstable; urgency=medium
+
+  * New upstream version 2.6.4
+  * Remove patches applied upstream
+  * Freshen years in debian/copyright
+  * Bump Standards-Version to 4.6.1
+
+ -- tony mancill <tmancill@debian.org>  Mon, 18 Jul 2022 20:06:56 -0700
+
+trustedqsl (2.6.3-1) unstable; urgency=medium
+
+  * New upstream version 2.6.3
+  * Refresh patches for new upstream version
+  * Fix segfault when renewing station certificate (Closes: #1012020)
+
+ -- tony mancill <tmancill@debian.org>  Sat, 04 Jun 2022 08:37:47 -0700
+
+trustedqsl (2.6.2-1) unstable; urgency=medium
+
+  * New upstream version 2.6.2.
+  * Use proper CMake variable for installing into libdir.
+  * Drop OpenSSL 3 patch, fixed upstream.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 24 May 2022 20:16:01 +0200
+
+trustedqsl (2.5.9-2) unstable; urgency=medium
+
+  * Add patch for compatibility with OpenSSL 3 (Closes: #1001358)
+
+ -- tony mancill <tmancill@debian.org>  Wed, 08 Dec 2021 18:56:31 -0800
+
+trustedqsl (2.5.9-1) unstable; urgency=medium
+
+  [ Christoph Berg ]
+  * Retire Kamal, Jaime, Patrick, Jerry, and Colin from Uploaders.
+    (Closes: #990593)
+
+  [ tony mancill ]
+  * New upstream version 2.5.9
+  * Bump Standards-Version to 4.6.0
+  * Update patches for new upstream release.
+
+ -- tony mancill <tmancill@debian.org>  Sun, 07 Nov 2021 15:41:26 -0800
+
+trustedqsl (2.5.8-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- tony mancill <tmancill@debian.org>  Sun, 15 Aug 2021 09:46:46 -0700
+
+trustedqsl (2.5.8-1) experimental; urgency=medium
+
+  * New upstream version 2.5.8
+  * Bump Standards-Version to 4.5.1
+
+ -- tony mancill <tmancill@debian.org>  Tue, 10 Aug 2021 21:02:17 -0700
+
+trustedqsl (2.5.7-2) experimental; urgency=medium
+
+  * Switch to LMDB; libdb is obsolete.
+
+ -- Christoph Berg <myon@debian.org>  Sat, 24 Apr 2021 17:51:04 +0200
+
+trustedqsl (2.5.7-1) unstable; urgency=medium
+
+  * New upstream version 2.5.7
+  * Refresh patches
+
+ -- tony mancill <tmancill@debian.org>  Sat, 21 Nov 2020 14:45:31 -0800
+
+trustedqsl (2.5.6-1) unstable; urgency=medium
+
+  * New upstream version 2.5.6
+  * Update to debhelper compat level 13
+  * Freshen debian/copyright
+  * Refresh patches for new upstream release
+
+ -- tony mancill <tmancill@debian.org>  Sun, 15 Nov 2020 15:31:21 -0800
+
+trustedqsl (2.5.5-1) unstable; urgency=medium
+
+  * New upstream version 2.5.5
+
+ -- tony mancill <tmancill@debian.org>  Sun, 13 Sep 2020 11:51:22 -0700
+
+trustedqsl (2.5.4-1) unstable; urgency=medium
+
+  * New upstream version 2.5.4
+
+ -- tony mancill <tmancill@debian.org>  Sun, 24 May 2020 11:06:46 -0700
+
+trustedqsl (2.5.3-1) unstable; urgency=medium
+
+  [ Christoph Berg ]
+  * Mute lintian warning for src/doxygen/html/menu.js.
+
+  [ tony mancill ]
+  * New upstream version 2.5.3
+  * Refresh patches against new upstream version
+  * Set CMAKE_INSTALL_MANDIR during build
+  * Bump Standards-Version to 4.5.0
+  * Add myself to Uploaders
+
+ -- tony mancill <tmancill@debian.org>  Sat, 02 May 2020 10:43:52 -0700
+
+trustedqsl (2.5.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.5.1 (Closes: #944994)
+  * Update to debhelper compat level 12
+  * Refresh patches against new upstream version
+  * Add a patch for typos in the source
+  * Freshen dates in debian/copyright
+  * Bump Standards-Version to 4.4.1
+  * Set "Rules-Requires-Root: no" in debian/control
+  * Set export DEB_BUILD_HARDENING=1 in debian/rules
+
+ -- tony mancill <tmancill@debian.org>  Sun, 17 Nov 2019 20:53:28 -0800
+
+trustedqsl (2.4.7-2) unstable; urgency=medium
+
+  * Rebuild against wxWidgets GTK 3. (Closes: #933437)
+  * Remove apps/tqslbuild.h on clean, it's updated at build time with git
+    information.
+  * Run reprotest with diffoscope enabled.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 30 Jul 2019 22:21:00 +0200
+
+trustedqsl (2.4.7-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add myself to Uploaders.
+  * Add debian/gitlab-ci.yml.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 05 May 2019 17:43:25 +0200
+
+trustedqsl (2.4.3-1) unstable; urgency=medium
+
+  * Team upload with new upstream release.
+  * Run wrap-and-sort -st.
+  * Create packaging repo on salsa.
+  * Add jquery-1.7.1.js source in debian/missing-sources/.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 13 Jan 2019 14:35:55 +0100
+
+trustedqsl (2.3.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Debian packaging:
+    - clean up old unused debian/patches (previously merged upstream)
+
+ -- Kamal Mostafa <kamal@whence.com>  Mon, 11 Sep 2017 05:49:19 -0700
+
+trustedqsl (2.3-1) unstable; urgency=high
+
+  * New upstream release
+    - fix FTBFS with openssl 1.1.0 (Closes: #828580)
+    - fix localization support (Closes: #833019)
+  * Debian packaging:
+    - drop 02-Fix-wxWidgets-argv-ambiguous-overload-for-gcc-5-6.patch (upstream)
+    - add openssl patches from upstream 2.3.1-beta:
+        - 0001-Another-OpenSSL-1.1-fix.patch
+        - 0001-Allow-TQSL-to-build-on-a-system-with-only-OpenSSL-1..patch
+    - update debian/watch to http://www.arrl.org/tqsl-download
+    - update uploaders: Hamish Moffatt has retired (Closes: #831486, #831487)
+
+ -- Kamal Mostafa <kamal@whence.com>  Tue, 22 Nov 2016 09:16:57 -0800
+
+trustedqsl (2.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Debian packaging:
+    - clean up old unused debian/patches (previously merged upstream)
+    - Fix FTBFS: 02-Fix-wxWidgets-argv-ambiguous-overload-for-gcc-5-6.patch
+
+ -- Kamal Mostafa <kamal@whence.com>  Sat, 02 Jul 2016 10:36:36 -0700
+
+trustedqsl (2.2.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump standards version to 3.9.8 (No changes required)
+
+ -- Colin Tuckley <colint@debian.org>  Tue, 03 May 2016 11:49:30 +0100
+
+trustedqsl (2.2-2) unstable; urgency=medium
+
+  * Debian packaging
+     - 04-do-not-install-wxstd-mo-files.patch (Closes: #813344)
+
+ -- Kamal Mostafa <kamal@whence.com>  Sun, 31 Jan 2016 14:24:40 -0800
+
+trustedqsl (2.2-1) unstable; urgency=medium
+
+  * New upstream release
+     - no longer ships ca-bundle.crt (Closes: #748963)
+  * Debian packaging
+     - drop trustedqsl.{menu,xpm} per W: command-in-menu-file-and-desktop-file
+     - drop 02-wx3.0-compat.patch (merged upstream)
+     - upstream patches from 2.2.1-alpha:
+         02-863a887-Fix-improper-handling-of-certificate-import-causing-.patch
+         03-ea590af-Fix-improper-handling-of-certificate-import-causing-.patch
+
+ -- Kamal Mostafa <kamal@whence.com>  Fri, 29 Jan 2016 13:37:43 -0800
+
+trustedqsl (2.0.3-2) unstable; urgency=medium
+
+  * Fix segfault when attempting to edit or add a station location,
+    thanks to olly@survex.com  Closes: #759224
+  * Bump standards version to 3.9.6
+
+ -- Colin Tuckley <colint@debian.org>  Thu, 09 Oct 2014 14:20:08 +0100
+
+trustedqsl (2.0.3-1) unstable; urgency=medium
+
+  * New Upstream Release.
+
+ -- Colin Tuckley <colint@debian.org>  Wed, 03 Sep 2014 13:41:00 +0100
+
+trustedqsl (2.0.2b-1) unstable; urgency=medium
+
+  * New upstream "final v2.0.2" release
+     - Debian "2.0.2b" corresponds to the changed upstream tqsl-2.0.2.tar.gz
+       released on 2014-07-12.
+
+ -- Kamal Mostafa <kamal@whence.com>  Sun, 13 Jul 2014 09:15:46 -0700
+
+trustedqsl (2.0.2-2) unstable; urgency=medium
+
+  [ Olly Betts ]
+  * Update to use wxWidgets 3.0 (02-wx3.0-compat.patch). Closes: #750084
+
+ -- Kamal Mostafa <kamal@whence.com>  Thu, 19 Jun 2014 17:43:09 -0700
+
+trustedqsl (2.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Debian packaging
+     - updated 01-install-libtqsllib-so-in-usr-lib-trustedqsl.patch
+     - bumped standards version
+
+ -- Kamal Mostafa <kamal@whence.com>  Wed, 16 Apr 2014 09:34:55 -0700
+
+trustedqsl (2.0-1) unstable; urgency=low
+
+  * New upstream release
+    - tqslcert app is no longer provided
+
+ -- Kamal Mostafa <kamal@whence.com>  Mon, 11 Nov 2013 10:56:18 -0800
+
+trustedqsl (1.14.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Kamal Mostafa <kamal@whence.com>  Wed, 12 Jun 2013 09:27:22 -0700
+
+trustedqsl (1.14.1-1) unstable; urgency=low
+
+  * New upstream release
+    - new application feature: direct upload to LoTW
+    - build system converted to CMake
+  * Debian packaging overhaul
+    - upstream source now bundles tqsllib (unversioned libtqsllib.so in
+        /usr/lib/trustedqsl/) so drop build-dep tqsllib-dev (>= 2.2)
+    - omit header files from application package
+
+ -- Kamal Mostafa <kamal@whence.com>  Sat, 01 Jun 2013 17:01:04 -0700
+
+trustedqsl (1.13-3) unstable; urgency=low
+
+  * Create manpages: trustedqsl.5, tqsl.1, tqslcert.1 (LP: #480355).
+  * debian/watch: refined version regexp.
+
+ -- Kamal Mostafa <kamal@whence.com>  Thu, 31 Mar 2011 20:50:06 -0700
+
+trustedqsl (1.13-2) unstable; urgency=low
+
+  * 00-copy-LICENSE-to-COPYING.patch: create COPYING.
+  * 01-fix-library-configure-checks.patch:
+      Clean up library configure checks: rm {openssl, expat}, fix zlib to
+      allow multi-arch libs [thanks Jonathan Marsden <jmarsden@fastmail.fm>].
+  * 10-icons-key16-xpm.patch: import icons/key16.xpm from trustedqsl-1.11.
+  * 99-update-generated-build-config.patch: autoconf, automake, libtool update.
+  * Drop build-dep on unused {libexpat-dev, libssl-dev}.
+  * debian/rules: install upstream ChangeLog.
+
+ -- Kamal Mostafa <kamal@whence.com>  Sat, 26 Mar 2011 21:19:03 -0700
+
+trustedqsl (1.13-1) unstable; urgency=low
+
+  * Updating to latest upstream release.
+  * Adding myself to the uploaders list.
+
+ -- Jerry Stueve <k4int@arrl.net>  Mon,  4 Oct 2010 18:32:26 +0000
+
+trustedqsl (1.11-8.1) unstable; urgency=low
+
+  * Retiring - remove myself from the uploaders list.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Mon, 16 Nov 2009 18:32:26 +0000
+
+trustedqsl (1.11-8) unstable; urgency=low
+
+  * Fix a couple of lintian warnings:
+    - call dh_installdeb after calling dh_shlibdeps and dh_makeshlibs.
+    - set debhelper compatibility version to 5.
+    - update standards version.
+    - install and create xpm files for the debian menu.
+  * New icons for the desktop menu files, requires imagemagick when
+    building the package.
+  * Fix all compilation warnings, most of them fixed by changing
+    'char *' to 'const char *'.
+  * wxNotebookSizer is deprecated, we can now use wxNotebook directly.
+  * Build against libwxgtk2.8-dev. tqslcert and tqsl have been ported
+    to version 2.8 of libwxgtk.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Fri, 20 Mar 2009 23:17:57 +0100
+
+trustedqsl (1.11-7) unstable; urgency=low
+
+  * Enable check for libcrypto in configure.in, so we link with this
+    library. Closes: #464278.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 17 Feb 2008 20:23:40 +0100
+
+trustedqsl (1.11-6) unstable; urgency=low
+
+  * Tried a rebuild, the build errors starting with "undefined reference
+    to `BIO_new_mem_buf'" seem to have gone. I have tried to figure out
+    if any of the packages needed for building have been updated recently,
+    could not find any relevant changes, sorry. Closes: #464278.
+  * Added a main category to the desktop files.
+  * Fix installation of icons, so they appear in the gnome menu.
+
+ -- Joop Stakenborg <pa3aba@debian.org>  Sun, 17 Feb 2008 16:43:11 +0100
+
+trustedqsl (1.11-5) unstable; urgency=low
+
+  * Update config.{guess,sub} at build-time from autotools-dev
+  * Added watch file to track new versions at sourceforge
+  * Update to standards-revision 3.7.3
+  * Added menu and desktop files
+  * Changed build-depends to WxWidgets 2.6 (closes: #418713)
+
+ -- Hamish Moffatt <hamish@debian.org>  Wed, 23 Jan 2008 10:07:32 +1100
+
+trustedqsl (1.11-4) unstable; urgency=low
+
+  * Fix circular dependency in Makefile and autoreconf with the
+    correct tool versions (ie automake 1.9 this time) and hope that
+    the infinite loop doesn't reoccur .. :-| (closes: #341474)
+  * tqsl should only open windows if not in batch mode (closes: #339560);
+    thanks to John Mock KD6PAG for the patch
+  * Reinstall the help files properly (closes: #278856)
+
+ -- Hamish Moffatt <hamish@debian.org>  Sat, 17 Dec 2005 18:26:36 +1100
+
+trustedqsl (1.11-3) unstable; urgency=low
+
+  * Rebuild against tqsllib1c2a due to g++ ABI change
+  * Hack configure.in not to link directly to OpenSSL and expat and zlib,
+    since they aren't used directly (only by tqsllib)
+
+ -- Hamish Moffatt <hamish@debian.org>  Sun, 27 Nov 2005 23:17:13 +1100
+
+trustedqsl (1.11-2) unstable; urgency=low
+
+  * Rebuild with g++-4.0/tqsllib 2.0-2
+
+ -- Hamish Moffatt <hamish@debian.org>  Sun, 31 Jul 2005 07:39:23 +0000
+
+trustedqsl (1.11-1) unstable; urgency=medium
+
+  * New upstream release
+  * Modified crqwiz.cpp to compile with gcc-4.0 (closes: #302544);
+    thanks to Andreas Jochens for the patch
+  * Build with new tqsllib 2.0
+    * urgency=medium because the new tqsllib fixes an RC bug
+
+ -- Hamish Moffatt <hamish@debian.org>  Wed, 27 Apr 2005 00:07:12 +1000
+
+trustedqsl (1.10-3) unstable; urgency=low
+
+  * Fix section of package (libs -> hamradio) (closes: #243544)
+  * Rebuild with latest libwxgtk2.4 (closes: #221357)
+
+ -- Hamish Moffatt <hamish@debian.org>  Sun, 15 Aug 2004 16:35:07 +1000
+
+trustedqsl (1.10-2) unstable; urgency=low
+
+  * Add build-dep for zlib1g-dev (closes: #219058)
+  * Renamed left and right xpms to resolve ambiguity problem
+    at compile time (closes: #221538)
+
+ -- Hamish Moffatt <hamish@debian.org>  Sat, 31 Jan 2004 13:47:15 +1100
+
+trustedqsl (1.10-1) unstable; urgency=low
+
+  * First upload
+
+ -- Hamish Moffatt <hamish@debian.org>  Wed, 22 Oct 2003 00:41:54 +1000
